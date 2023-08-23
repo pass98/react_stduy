@@ -4,8 +4,10 @@ import './index.css';
 // import App from './App';
 
 // 실습1
-import App from './EX01'
+// import App from './EX01';
 
+// 실습2
+import App from './Ex02';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
