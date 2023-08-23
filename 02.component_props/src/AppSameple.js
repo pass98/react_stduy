@@ -106,45 +106,62 @@
 
 import React from 'react';
 
-// 로그인 검증 함수
-const validateCredentials = (inputId, inputPw) => {
-    if (inputId === 'id' && inputPw === 'pw') {
-        return 'success';
-    } 
-    if (inputId !== 'id' && inputPw === 'pw') {
-        return '아이디가 잘못되었습니다.';
-    } 
-    if (inputId === 'id' && inputPw !== 'pw') {
-        return '비밀번호가 잘못되었습니다.';
-    } 
-    return '아이디와 비밀번호 모두 잘못되었습니다.';
-}
+// // 로그인 검증 함수
+// const validateCredentials = (inputId, inputPw) => {
+//     if (inputId === 'id' && inputPw === 'pw') {
+//         return 'success';
+//     } 
+//     if (inputId !== 'id' && inputPw === 'pw') {
+//         return '아이디가 잘못되었습니다.';
+//     } 
+//     if (inputId === 'id' && inputPw !== 'pw') {
+//         return '비밀번호가 잘못되었습니다.';
+//     } 
+//     return '아이디와 비밀번호 모두 잘못되었습니다.';
+// }
 
-// 로그인 성공 컴포넌트
-const LoginSuccess = () => (
-    <div>
-        <p>환영합니다!~</p>
-    </div>
-);
+// // 로그인 성공 컴포넌트
+// const LoginSuccess = () => (
+//     <div>
+//         <p>환영합니다!~</p>
+//     </div>
+// );
 
-// 로그인 실패 컴포넌트
-const LoginFail = ({ message }) => (
-    <div>
-        <p>{message}</p>
-    </div>
-);
+// // 로그인 실패 컴포넌트
+// const LoginFail = ({ message }) => (
+//     <div>
+//         <p>{message}</p>
+//     </div>
+// );
 
 // 메인 컴포넌트
-const AppSample = () => {
-    const inputId = prompt('아이디를 입력하세요');
-    const inputPw = prompt('비밀번호를 입력하세요');
-    const validationResult = validateCredentials(inputId, inputPw);
+// const AppSample = () => {
+//     const inputId = prompt('아이디를 입력하세요');
+//     const inputPw = prompt('비밀번호를 입력하세요');
+//     const validationResult = validateCredentials(inputId, inputPw);
 
-    if (validationResult === 'success') {
-        return <LoginSuccess />;
-    } else {
-        return <LoginFail message={validationResult} />;
-    }
+//     if (validationResult === 'success') {
+//         return <LoginSuccess />;
+//     } else {
+//         return <LoginFail message={validationResult} />;
+//     }
+// }
+
+
+
+const AppSample = () => {
+        const inputId = prompt('아이디를 입력하세요');
+        const inputPw = prompt('비밀번호를 입력하세요');
+
+    return(
+        <div>
+            {id ==='smhrd' && pw === '123'?
+            <LoginSuccess/>:
+            <LoginFail id={id} pw={pw}/>}
+        </div>
+
+    )
 }
+
 
 export default AppSample;
