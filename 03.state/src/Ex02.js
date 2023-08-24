@@ -22,7 +22,7 @@ const Ex02 = () => {
         console.log(ran)
         setnum(e.target.innerText)
         console.log(e.target.innerText);
-
+        
         
         
     }
@@ -32,7 +32,6 @@ const Ex02 = () => {
         }else{
         setres("오답입니다..😒")        }
         console.log(res)
-    
     
   return (
     <div>
