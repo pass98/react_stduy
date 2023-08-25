@@ -27,9 +27,48 @@ import Board from './Components/Board'
 
 const Ex03 = () => {
 
+    // const imgpath = '/img/dice'
+
+    // //사용자 state
+    // const [userScore,setUserScore] = useState(0)
+    // const [userDicenum,setUserDiceNum] = useState(1)
+    // const [userImg,setUserImg] = useState(`${imgpath}1.png`)
+
+    // //컴퓨터 state
+    // const [comScore,setComScore] = useState(0)
+    // const [comDicenum,setComDiceNum] = useState(1)
+    // const [comImg,setcomImg] = useState(`${imgpath}1.png`)
+
+
+    // // 주사위 던지기 기능
+    // const ThrowDice = () => {
+    //     let userNum = parseInt(Math.random()*6) +1
+    //     let comNum = parseInt(Math.random()*6) +1
+
+    //     console.log(userNum, conNum);
+    //     setUserDiceNum(userNum)
+    //     setComDiceNum(comNum)
+    //     setUserImg(`${imgpath}${userNum}.png`)
+    //     setcomImg(`${imgpath}${comNum}.png`)
+    //     jugement(userNum,comNum)
+    // }
+
+    // //주사위 눈 비교하는 기능
+    // const jugement = (user,com) => {
+    //     console.log('넘겨받은 숫자',user,com);
+    //     if(user === com){
+    //         alert('무승부!')
+    //     }else if(user>com){
+    //         setUserScore(userScore+1)
+    //     }else{
+    //         setComScore(comScore+1)
+    //     }
+    // }
+
   return (
     
     <div>
+        
         <Board/>
     </div>
 

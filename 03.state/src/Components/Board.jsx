@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import '../style/ex03.css'
 
-
-const Board = () => {
+const Board = (props) => {
      //유저 주사위
      const [diceNum,setdiceNum] = useState(1);
      //컴퓨터 주사위
@@ -31,7 +30,15 @@ const Board = () => {
             setcpuNumber(cpuNumber + 1) 
         }
         console.log(userNumber,cpuNumber)
-        
+        firstWin(userNumber, cpuNumber)
+    }
+    
+    const firstWin = (userNumber, cpuNumber) => {
+        if(userNumber == 5){
+            alert('당신이 이겼습니다!')
+        }else if(cpuNumber == 5){
+            alert('컴퓨터가 이겼습니다!')
+        }
     }
      const resetall = ()  => {
         setdiceNum(1)
@@ -44,8 +51,8 @@ const Board = () => {
     <div className='container'>
         <h1>주사위게임</h1>
         <div className='button-area'>
-        <Button onClick={RanDice}>던지기</Button>
-        <Button onClick={resetall}>RESET</Button>
+        <Button variant='secondary' onClick={ThrowDice}>던지기</Button>
+        <Button onClick={props.resetall} variant='danger' >RESET</Button>
         </div>
         <div className='board-area'>
         <div><p>나</p><img src={`../img/dice${diceNum}.png`}></img>
@@ -54,6 +61,8 @@ const Board = () => {
         <div><p>컴퓨터</p><img src={`../img/dice${cpuNum}.png`}></img>
         <p>현재 점수는?{cpuNumber}</p>
         </div>
+        <Board name={`나(${userDiceNum})`} imgPath = {userImg} score={userScore}/>
+        <Board name={`컴퓨터(${comDiceNum})`} imgPath = {userImg} score={comScore}/>
         </div>
     </div>
   )

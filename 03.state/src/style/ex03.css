@@ -21,3 +21,6 @@
   .score-area{
     margin-top: 20px;
   }
+  .reset{
+    background-color : red;
+  }
