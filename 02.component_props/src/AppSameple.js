@@ -104,7 +104,7 @@
 
 
 
-import React from 'react';
+
 
 // // 로그인 검증 함수
 // const validateCredentials = (inputId, inputPw) => {
@@ -147,21 +147,13 @@ import React from 'react';
 //     }
 // }
 
+import React from 'react'
 
-
-const AppSample = () => {
-        const inputId = prompt('아이디를 입력하세요');
-        const inputPw = prompt('비밀번호를 입력하세요');
-
-    return(
-        <div>
-            {id ==='smhrd' && pw === '123'?
-            <LoginSuccess/>:
-            <LoginFail id={id} pw={pw}/>}
-        </div>
-
-    )
+function APP() {
+    const id, pw = () => {
+    prompot()
 }
-
-
-export default AppSample;
+return (
+    </div>
+)
+}
