@@ -1,8 +1,8 @@
 [
-    {"id" :"1", "name":"신현진", "task":"back,front"},
-    {"id":"2", "name":"김형균", "task":"챗gpt"},
-    {"id":"3", "name":"정은우","task":"god"},
-    {"id": "4", "name":"김도형", "task":"subspage"},
-    {"id": "5", "name":"정유빈", "task":"sidechatbot"},
-    {"id": "6", "name":"나범수", "task":"git mypage"}
+    {"id": "1", "name":"신현진", "task":"Front-end", "age" : 28},
+    {"id": "2", "name":"김형균", "task":"Front-end", "age" : 25 },
+    {"id": "3", "name":"정은우", "task":"Front-end", "age" : 24},
+    {"id": "4", "name":"김도형", "task":"Back-end",  "age" : 29},
+    {"id": "5", "name":"정유빈", "task":"Back-end",  "age" : 26},
+    {"id": "6", "name":"나범수", "task":"Back-end",  "age" : 26}
 ]

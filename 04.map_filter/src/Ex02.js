@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import coffe_menus from './data/coffee_menus.json'
-import BasicExample from './components/coffeemenu'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MenuBoard from './components/MenuBoard';
+import './style/Ex02.css'
 
 // import 'bootstrap/dist/css/boostrap.min.css'
 /*
@@ -19,21 +20,29 @@ import BasicExample from './components/coffeemenu'
 
 
 
-const Ex02 = () => {
+// const Ex02 = () => {
 
-    const [coffees,setCoffees] = useState(coffe_menus)
-  return (
-    <div>
-        {coffees.map((coffee)=>(
-            <p key={coffee.id}>
-                <span>종류: {coffee.category}</span>
-                <span>이름: {coffee.name}</span>
-                <span>가격: {coffee.price}</span>
-            </p>
-        ))}
-        <BasicExample/>
-    </div>
+//     const [coffees,setCoffees] = useState(coffe_menus)
+//   return (
+//     <div>
+//         {/* {coffees.map((coffee)=>(
+//             <p key={coffee.id}>
+//                 <span>종류: {coffee.category}</span>
+//                 <span>이름: {coffee.name}</span>
+//                 <span>가격: {coffee.price}</span>
+//             </p>
+//         ))}
+//         <BasicExample/> */}
+        
+//     </div>
+//   )
+// }          기존에 내가 작성했던 답
+
+// export default Ex02
+
+const Ex02 = () => {
+  return(
+    <MenuBoard/>
   )
 }
-
 export default Ex02

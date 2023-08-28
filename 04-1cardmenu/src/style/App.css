@@ -1,0 +1,8 @@
+.menu_list{
+    display : flex;
+    gap : 10px;
+    flex-wrap: wrap;  
+    /* 일정 공간을 벗어나면 알아서 줄이 바뀌는 설정 */
+    width : 1200px;
+    margin : 0 auto;
+}
