@@ -4,9 +4,6 @@ const Ex01 = () => {
     let inputRef = useRef();
 
     const handleClick = () => {
-
-       
-
         let input = document.querySelector('input[type="text"]')
         console.log(input.value);
     } 
