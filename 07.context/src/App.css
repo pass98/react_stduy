@@ -20,6 +20,12 @@
     align-items: center;
   }
   
+  .header-dark{
+    background-color: #212121;
+    color : white
+  }
+
+
   .content {
     flex: 1;
     display: flex;

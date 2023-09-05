@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
 const Footer = () => {
-    const {setIsdark} = useContext(ThemeContext)
+    const {isDark,setIsDark} = useContext(ThemeContext)
+
   return (
-    <div className='footer'>
-        <button className='button' onClick={()=>setIsdark('gray')}>Dark Mode</button>
+    <div className='footer' style={{backgroundColor:isDark? 'black': 'white'}}>
+        <button className='button' onClick={()=>setIsDark(!isDark)}>Dark Mode</button>
     </div>
-    
   )
 }
 
