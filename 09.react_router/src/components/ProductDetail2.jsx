@@ -7,7 +7,10 @@ const ProductDetail2 = () => {
 
 
     //쿼리스트링으로 넘겨받은 데이터를 가져오는 함수 : query.get(name)
-    console.log('Product페이지로부터 전달받은 값 :', query)
+    // ex) http://localhost:3000/product?cate=shirt
+    //      cate에 연결된 값 접근방법 -> query.get('cate') ==> shirt 
+
+    console.log('Product페이지로부터 전달받은 값 :', query.get('cate'))
 
   return (
     <div>ProductDetail2</div>
