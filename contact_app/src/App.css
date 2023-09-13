@@ -1,0 +1,22 @@
+.card{
+    border:1px solid ;
+}
+.home{
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex : 1;
+    display: flex;
+}
+
+.ContactForm{
+    flex-basis: 50%;
+}
+
+.ContactList{
+    flex-basis: 50%;
+}
