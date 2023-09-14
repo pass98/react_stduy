@@ -14,7 +14,8 @@ export const contactSlice = createSlice({
                 state.contacts = state.contacts.concat(action.payload)
         },
         searchContact : (state,action) => {
-
+            state.keyword = state.keyword.concat(action,payload)
+            
         }
     }
 
