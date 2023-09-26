@@ -1,10 +1,10 @@
 import React from 'react'
 
-const MovieCard = ({movies}) => {
-  console.log('카드 출력완료', movies)
+const MovieCard = ({movieCard}) => {
+  console.log('카드 출력완료', movieCard)
   return (
     <div>
-  
+      
     </div>
   )
 }

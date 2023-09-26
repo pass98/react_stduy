@@ -69,10 +69,10 @@ console.log('데이터 출력완료!',popularMovies)
   <div>
   <h1>인기있는 영화</h1>
   <MovieSlide  movies={popularMovies} />
-  <h1>Top rated Movie</h1>
+  {/* <h1>Top rated Movie</h1>
   <MovieSlide/>
   <h1>Upcoming Movie</h1>
-  <MovieSlide/>
+  <MovieSlide/> */}
   </div>
         </div>
       )}
