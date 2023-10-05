@@ -102,3 +102,12 @@ body{
     border-bottom : 3px solid white;
     margin-bottom : 15px;
 }
+
+
+/* Movies */
+.movie-card-list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap : 5px;
+}

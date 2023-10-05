@@ -6,6 +6,8 @@ import Banner from "../components/Banner";
 import { useSelector } from "react-redux";
 import MovieSlide from "../components/MovieSlide";
 import ClipLoader from "react-spinners/ClipLoader";
+
+
 const Home = () => {
   // const popularReq = async () => {
   //   let res = await api.get("/movie/popular?language=ko-KR&page=1");
@@ -67,6 +69,7 @@ const Home = () => {
 
   return (
     <div>
+    <div>
       {loading ? (
         <ClipLoader
           color="#ffffff"
@@ -76,7 +79,9 @@ const Home = () => {
           data-testid="loader"
         />
       ) : (
-        <div>
+        <div className="home-container">
+          
+          
           {/* {popularpost && <Banner movie={popularpost[0]}/>} */}
           <Banner movie={popularMovies[0]} />
           <div>
@@ -91,6 +96,8 @@ const Home = () => {
         </div>
       )}
     </div>
+
+</div>
   );
 };
 
