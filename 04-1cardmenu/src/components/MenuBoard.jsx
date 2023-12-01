@@ -16,6 +16,14 @@ const MenuBoard = () => {
         console.log('선택된 카테고리는?',category)
         if(category === '커피'){
             setFilter(menus.filter((item)=>item.category==='커피'))
+        }else if(category === '에이드'){
+            setFilter(menus.filter((item)=>item.category==='에이드'))
+        }else if(category === '디저트'){
+            setFilter(menus.filter((item)=>item.category==='디저트'))
+        }else if(category === '베이커리'){
+            setFilter(menus.filter((item)=>item.category==='베이커리'))
+        }else {
+            setFilter(menus.filter((item)=> item))
         }
     }
     

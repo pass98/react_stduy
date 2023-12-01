@@ -13,8 +13,9 @@ import logger from 'redux-logger'
 
 export default configureStore({
     reducer : {
-        counter:counterReducer
+        counter:counterReducer,
+        // 임포트를 하면서 export default counterSlice.reducer 의 값을 가져옴.
     },
     middleware : (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
-
+    // console.log를 찍어내기 위함. 없어도 상관 없음. 
 })

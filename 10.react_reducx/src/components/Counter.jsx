@@ -21,6 +21,9 @@ import {CountReducerActions} from '../redux/reducers/counterSlice'
 const Counter = () => {
 
   const count = useSelector((state)=>state.counter.count)
+  // state의 이유 : store에 있는 reducer를 가져오기 위함. 
+  // useSelector의 흐름 : counterSlice에 있는 초기state의 값에 접근을 하고 reudecer의 동작을 반영하여 새로운 값을 반영
+  // 단, 이때 store에 reducer의 값을 받기 위해 
   const dispatch = useDispatch()
 
   console.log('counterReducer state :', count)

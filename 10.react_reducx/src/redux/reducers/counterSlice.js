@@ -23,7 +23,7 @@ export const counterSlice = createSlice({
             state.count-=1
         },
         //넘겨받은 숫자를 이용해서 state를 변경하는 함수 정의하기
-        //action -> {type, payload} 형태로 반환
+        //action -> {type, payload} 형태를 가지고 있음.
         // type : 명령 타입 ex) 숫자를 증가해라 (increment), 숫자를 감소해라(decrement)
         // payload : 외부로부터 넘겨받은 데이터를 저장하는 속성
         incrementByAmount : (state,action)=>{
